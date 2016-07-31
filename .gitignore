@@ -8,3 +8,5 @@ npm-debug.log*
 /electron.js*
 /release
 /test/coverage
+.idea
+.idea/

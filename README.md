@@ -1,4 +1,6 @@
-# aurelia-skeleton-webpack
+# Aurelia Weather App
+
+This app is created only because I could do that. :-)
 
 ## Getting started
 
