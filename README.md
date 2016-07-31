@@ -2,6 +2,7 @@
 
 This app is created only because I could do that. :-)
 
+![demo](http://i.imgur.com/Xj1lXdK.gif)
 
 ## Notes
 
