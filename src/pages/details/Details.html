@@ -1,0 +1,29 @@
+<template>
+  <div class="columns">
+    <div class="column is-half is-offset-one-quarter">
+      <button class="button is-info" click.trigger="backClick()">
+        Back
+      </button>
+      <section if.bind="!detailsPageState.loading">
+        <compose
+          view="./partials/Loading.html"
+        ></compose>
+      </section>
+      <section if.bind="detailsPageState.loading">
+        <article if.bind="detailsPageState.error.status" class="message is-danger">
+          <div class="message-header">
+            Error
+          </div>
+          <div class="message-body">
+            ${detailsPageState.error.message}
+          </div>
+        </article>
+        <compose
+          view="./partials/Today.html"
+        ></compose>
+        <compose
+          view="./partials/Table.html"
+        ></compose>
+      </section>
+    </div>
+</template>

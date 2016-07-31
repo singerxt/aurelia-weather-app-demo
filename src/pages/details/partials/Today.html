@@ -1,0 +1,10 @@
+<template>
+  <h1 class="title is-3 has-text-centered">
+    ${weather.name}
+    <img src="http://openweathermap.org/img/w/${weather.weather[0].icon}.png">
+  </h1>
+  <p class="has-text-centered">
+    ${weather.weather[0].description}
+  </p>
+  <h1 class="title is-1 has-text-centered">${weather.main.temp}&#8457;</h1>
+</template>

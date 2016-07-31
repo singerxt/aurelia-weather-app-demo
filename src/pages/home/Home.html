@@ -1,0 +1,42 @@
+<template>
+  <div class="columns">
+    <div class="column is-half is-offset-one-quarter">
+      <section>
+        <h1 class="title is-1">Weather app</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida ullamcorper magna
+          eu sodales. Maecenas ornare mattis cursus. Maecenas consequat,
+          ligula et faucibus volutpat, ex dui consectetur odio, tincidunt
+          posuere nisi tortor in lorem. In luctus suscipit velit. Nunc est velit,
+          aliquam ut consectetur ac, gravida tristique turpis. Nulla fermentum ornare neque, at
+          porttitor tellus ullamcorper et. Aenean nec bibendum turpis, a dapibus felis. Aliquam
+          elit magna, porta sit amet placerat et, congue vel velit. Proin eget tellus diam. Duis tempus dui
+          tristique dolor ultrices, ac mattis ligula aliquet. Cras facilisis facilisis porttitor. Nam nec volutpat e
+          rat. Etiam mattis massa in tincidunt suscipit.
+        </p>
+        <div class="columns">
+          <div class="column is-half">
+            <h1 class="title is-3">Use geolocalisation</h1>
+            <button
+              class="button is-info ${geoButton.disabled ? 'is-loading' : ''}"
+              click.trigger="useGeoLocation()"
+            >
+              Go!:-)
+            </button>
+          </div>
+          <div class="column is-half">
+            <h1 class="title is-3">For specific city</h1>
+            <p class="control">
+              <input class="input" value.bind="cityInputValue" type="text" placeholder="eg. London">
+            </p>
+            <button
+              class="button is-info"
+              click.trigger="handleCityChoose()"
+            >
+              Submit!:-)
+            </button>
+          </div>
+        </div>
+      </section>
+  </div>
+</template>
