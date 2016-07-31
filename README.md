@@ -2,6 +2,12 @@
 
 This app is created only because I could do that. :-)
 
+
+## Notes
+
+If you want to install this application and see how it's works you have to generate apikey for [openweatherapi](http://openweathermap.org/)
+and replace old (not working) apikey to new one in ./common/Configuration/Configuration.js
+
 ## Getting started
 
 Before you start, make sure you have a recent version of [NodeJS](http://nodejs.org/) environment *>=4.0* with NPM 3.
